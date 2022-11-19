@@ -9,7 +9,7 @@ const Home = ({ navigation }) => {
 
         <View style={styles.container}>
             <ImageBackground
-                style={{ width: 400, height: 900, zIndex: -1 }}
+                style={{ width: "100%", height: 900, zIndex: -1 }}
                 source={require('../src/assets/bg1.jpg')}
             >
                 <View style={{ zIndex: 9999 }}>
@@ -18,7 +18,8 @@ const Home = ({ navigation }) => {
                     <View>
                         <Button
                             onPress={() =>
-                                navigation.navigate()}
+                                navigation.navigate("Daily_report")
+                            }
                             title="AQI 93"
                         />
                     </View>

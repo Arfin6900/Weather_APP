@@ -8,6 +8,7 @@ import Signup from './screens/SignUp';
 //  import UnitsPicker from './components/UnitsPick'
 import Settings from './screens/Settings';
 import Privacy from './screens/Privacy';
+import MyTabs from './screens/MyTabs';
 
 
 
@@ -20,12 +21,13 @@ const App = () => {
     // <View><Text>App</Text></View>
     <NavigationContainer>
       <Stack.Navigator>
+      <Stack.Screen name="Login" component={Login} options={{headerShown:false}}/>
+       <Stack.Screen name="Signup" component={Signup}  options={{headerShown:false}} />
       <Stack.Screen name="Home" component={Home} />
       <Stack.Screen name="Settings" component={Settings} />
-      <Stack.Screen name="Login" component={Login} />
       <Stack.Screen name="Privacy" component={Privacy} />
+      <Stack.Screen name="Daily_report" component={MyTabs}   options={{headerShown:false}}/>
 
-       <Stack.Screen name="Signup" component={Signup} />
        
       {/* <Stack.Screen name="UnitsPicker" component={UnitsPicker} /> */}
       {/* <Stack.Screen name="ForgotPassword" component={ForgotPassword} /> */}
